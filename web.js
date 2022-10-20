@@ -15,15 +15,13 @@ app.post('/', function (req, res) {
   
   
   //res.send(moves[Math.floor(Math.random() * moves.length)]);
-  res.send('F');  
-  res.send('T');
-  res.send('L');
-  res.send('T');
-  res.send('F');
-  res.send('T');
-  res.send('R');
-  res.send('T');
-  res.send('F');
+  for (var x = 0; x < moves.length; x++) {
+   res.send(moves[x]);
+    
+    if(x = 4) {
+      x = 0;
+    }
+  }
   
 });
 
