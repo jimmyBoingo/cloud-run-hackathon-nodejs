@@ -16,6 +16,15 @@ app.post('/', function (req, res) {
   
   //res.send(moves[Math.floor(Math.random() * moves.length)]);
   res.send('F');  
+  res.send('T');
+  res.send('L');
+  res.send('T');
+  res.send('F');
+  res.send('T');
+  res.send('R');
+  res.send('T');
+  res.send('F');
+  
 });
 
 app.listen(process.env.PORT || 8080);
