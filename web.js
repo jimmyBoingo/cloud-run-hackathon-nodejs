@@ -20,8 +20,8 @@ app.post('/', function (req, res) {
     
     res.send(moves[x]);
 
-      if ( x == 4) {
-        x=0;
+      if ( x = 4) {
+        x = 0;
       }
     
   }
